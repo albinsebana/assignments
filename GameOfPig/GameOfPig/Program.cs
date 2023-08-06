@@ -24,7 +24,7 @@ namespace GameOfPig
 
                 if (choice == 'r')
                 {
-                    int roll = random.Next(1, 7);
+                    int roll = random.Next(1, 7); // 1 is included , 7 is excluded 
                     Console.WriteLine("You rolled : " + roll);
 
                     if (roll == 1)
@@ -36,7 +36,7 @@ namespace GameOfPig
                     else
                     {
                         turnScore = roll;
-                        totalScore += turnScore;
+                        totalScore += turnScore;// added each rolled score.
                     }
                 }
                 else if (choice == 'h')
